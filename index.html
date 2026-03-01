@@ -1,14 +1,69 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Blog de Christophe</title>
-  </head>
-  <body>
-    <h1>Salut! Comment allez-vous!</h1>
-    <p>Moi ça va bien!</p>
-    <button>
-      <a href:"https://sites.google.com/view/voici-ma-deuxiemme-page/accueil">
-        Donner
-    </button>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gnof | Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold gradient-text">gnof.is-a.dev</div>
+        <div class="space-x-6 text-gray-400">
+            <a href="https://projects.gnof.is-a.dev" class="hover:text-sky-400">Projets</a>
+            <a href="https://docs.gnof.is-a.dev" class="hover:text-sky-400">Documentation</a>
+            <a href="mailto:contact@gnof.is-a.dev" class="hover:text-sky-400">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto mt-20 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+            Ingénierie Logicielle & <span class="gradient-text">Solutions Scalables</span>
+        </h1>
+        <p class="text-xl text-gray-400 mb-10 leading-relaxed">
+            Passionné par le code propre et l'architecture système. 
+            Découvrez mes outils et API via mes sous-domaines dédiés.
+        </p>
+        
+        <div class="flex justify-center gap-4">
+            <a href="#about" class="bg-sky-500 hover:bg-sky-600 px-8 py-3 rounded-lg font-medium transition">Mon Parcours</a>
+            <a href="https://github.com/votre-utilisateur" class="border border-gray-700 hover:border-sky-400 px-8 py-3 rounded-lg font-medium transition">GitHub</a>
+        </div>
+    </main>
+
+    <section class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Écosystème de Développement</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-sky-500 transition">
+                <div class="text-sky-400 font-mono mb-2">projects.gnof.is-a.dev</div>
+                <h3 class="text-xl font-bold mb-3">Portfolio de Projets</h3>
+                <p class="text-gray-400">Index complet de mes applications, bibliothèques et contributions Open Source.</p>
+            </div>
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-sky-500 transition">
+                <div class="text-sky-400 font-mono mb-2">api.gnof.is-a.dev</div>
+                <h3 class="text-xl font-bold mb-3">Endpoints Publics</h3>
+                <p class="text-gray-400">Services Backend RESTful et GraphQL pour mes intégrations mobiles et web.</p>
+            </div>
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-sky-500 transition">
+                <div class="text-sky-400 font-mono mb-2">docs.gnof.is-a.dev</div>
+                <h3 class="text-xl font-bold mb-3">Base de Connaissances</h3>
+                <p class="text-gray-400">Documentation technique détaillée sur mes frameworks et patterns préférés.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 border-t border-slate-800 text-gray-500 text-sm">
+        © 2026 gnof - Développé avec rigueur et café.
+    </footer>
+
+</body>
 </html>
